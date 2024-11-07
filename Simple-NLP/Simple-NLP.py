@@ -66,7 +66,7 @@ bad_words = np.array(["bad","ugly","poor","nasty","sad",\
 final_score = 0
 
 print("hello! welcome to my first NLP project!")
-print("I hope you enjoy, enter /'exit/' to stop the loop.")
+print("I hope you enjoy, enter 'exit' to stop the loop.")
 while True:
     user_input = input("please enter a sentence =").lower()
     
