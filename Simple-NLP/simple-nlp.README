@@ -1,0 +1,75 @@
+- Overview
+
+This project is a basic Sentiment Analysis tool implemented in Python, leveraging simple Natural Language Processing (NLP) techniques. It takes user input sentences, analyzes their tone by identifying positive or negative words, and then provides a sentiment score based on the conversation's overall tone. The conversation can be classified as positive, negative, or neutral depending on the score.
+
+
+- Features
+
+1. Word-Based Sentiment Scoring: The code uses predefined lists of positive (good_words) and negative (bad_words) words to assess each sentence's sentiment.
+
+
+2. Cumulative Scoring: The program calculates a cumulative score based on all the sentences entered by the user.
+
+
+3. Conversation Status: Once the user exits, the tool returns the overall sentiment of the conversation as positive, negative, or neutral.
+
+
+
+- Requirements
+
+Python 3.x
+
+NumPy library for handling arrays (numpy)
+
+
+To install NumPy, use:
+
+pip install numpy
+
+
+
+- Usage
+
+1. Run the Program: Run the script in a Python environment.
+
+
+2. Enter Sentences: The program will prompt you to enter sentences. It will analyze each sentence for sentiment and accumulate a score.
+
+
+3. Exit the Program: Type exit to end the conversation, and the program will display the overall sentiment.
+
+
+
+- Example Interaction
+
+hello! welcome to my first NLP project!
+I hope you enjoy, enter 'exit' to stop the loop.
+
+please enter a sentence = I am very happy today
+please enter a sentence = It's a lovely day
+please enter a sentence = I feel sad
+please enter a sentence = exit
+
+the conversation state was positive
+
+
+
+- Code Structure
+
+sentence_score(user_input, good_words, bad_words): This function calculates the sentiment score of each sentence based on the presence of words in the good_words and bad_words lists. Positive words increment the score, while negative words decrement it.
+
+final_message(final_score): This function evaluates the cumulative score of the conversation and returns whether the tone is "positive", "negative", or "neutral".
+
+
+
+- Customization
+
+Adjust Vocabulary: You can expand the good_words and bad_words arrays to include additional words, making the sentiment analysis more nuanced.
+
+Enhance Scoring Logic: This project currently uses simple word matching. Consider integrating NLP libraries like NLTK or spaCy for more complex sentiment analysis.
+
+
+
+- License
+
+This project is open-source, feel free to modify and distribute as per your needs.
