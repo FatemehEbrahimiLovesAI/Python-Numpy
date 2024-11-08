@@ -5,9 +5,14 @@ def sentence_score(user_input,good_words,bad_words):
     This function checks whether the user's messages were mostly positiv
     or negative based on the sentiment scores entered in the user's words.
     
+
+    Args:
         user_input(str) : The last sentence entered by the user.
         good_words(ndarray) : Presentation of positive good words.
         bad_words(ndarray) : Presentation of negative words.
+
+    Returns:
+        score (int): The final score of the sentence
     """
     # Removes commas and periods for correct operation.
     user_input = user_input.replace(",", "").replace(".", "")
@@ -37,7 +42,11 @@ def final_message(final_score):
     conversation was positive, negative or neutral 
     according to the score of all the messages.
     
+    Args:
         final_score(int): The final score of the sentences
+
+    Returns:
+        conversation_status (str): Returns the conversation status.
     """
     
     # Checks if the score is higher than zero, 
@@ -53,7 +62,6 @@ def final_message(final_score):
     else:
         conversation_status = "neutral"
         
-    # Returns the conversation status.
     return conversation_status
 
 
